@@ -119,7 +119,7 @@ public class Lab1 {
         return count;
     }
     //3.7
-    public void square (int x) {
+    public void square(int x) {
         for (int i = 1; i <= x; i++) {
             for (int j = 1; j <= x; j++) {
                 System.out.print("*");

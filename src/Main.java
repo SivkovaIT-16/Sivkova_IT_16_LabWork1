@@ -201,58 +201,58 @@ public class Main {
 //        int y4_3 = l.maxAbs(arr);
 //        System.out.println("Наибольшее по модулю значение массива: " + y4_3);
 
-//        System.out.println("Задача 4.5");
-//        System.out.println("Введите целое число (количество элементов массива arr).");
-//        int n4_5 = scanner.nextInt();
-//
-//        if (!xIsNatural(n4_5)) {
-//            System.out.println("Ошибка ввода.");
-//            return;
-//        }
-//
-//        if (!MasSize(n4_5)) {
-//            System.out.println("Массив arr пустой.");
-//            return;
-//        }
-//
-//        int[] arr = new int[n4_5];
-//        for (int i = 0; i < n4_5; i++) {
-//            System.out.println("Введите " + (i + 1) + " элемент массива arr.");
-//            arr[i] = scanner.nextInt();
-//        }
-//
-//        System.out.println("Введите целое число (количество элементов массива ins).");
-//        int m4_5 = scanner.nextInt();
-//
-//        if (!xIsNatural(m4_5)) {
-//            System.out.println("Ошибка ввода.");
-//            return;
-//        }
-//
-//        if (!MasSize(m4_5)) {
-//            System.out.println("Массив ins пустой.");
-//            return;
-//        }
-//
-//        int[] ins = new int[m4_5];
-//        for (int i = 0; i < m4_5; i++) {
-//            System.out.println("Введите " + (i + 1) + " элемент массива ins.");
-//            ins[i] = scanner.nextInt();
-//        }
-//
-//        System.out.println("Введите позицию pos.");
-//        int pos = scanner.nextInt();
-//
-//        if (!xIsNatural(pos)) {
-//            System.out.println("Ошибка ввода.");
-//            return;
-//        }
-//
-//        int[] y4_5 = l.add(arr, ins, pos);
-//        System.out.print("Новый массив:  ");
-//        for (int i = 0; i < y4_5.length; i++) {
-//            System.out.print(y4_5[i] + " ");
-//        }
+        System.out.println("Задача 4.5");
+        System.out.println("Введите целое число (количество элементов массива arr).");
+        int n4_5 = scanner.nextInt();
+
+        if (!xIsNatural(n4_5)) {
+            System.out.println("Ошибка ввода.");
+            return;
+        }
+
+        if (!MasSize(n4_5)) {
+            System.out.println("Массив arr пустой.");
+            return;
+        }
+
+        int[] arr = new int[n4_5];
+        for (int i = 0; i < n4_5; i++) {
+            System.out.println("Введите " + (i + 1) + " элемент массива arr.");
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("Введите целое число (количество элементов массива ins).");
+        int m4_5 = scanner.nextInt();
+
+        if (!xIsNatural(m4_5)) {
+            System.out.println("Ошибка ввода.");
+            return;
+        }
+
+        if (!MasSize(m4_5)) {
+            System.out.println("Массив ins пустой.");
+            return;
+        }
+
+        int[] ins = new int[m4_5];
+        for (int i = 0; i < m4_5; i++) {
+            System.out.println("Введите " + (i + 1) + " элемент массива ins.");
+            ins[i] = scanner.nextInt();
+        }
+
+        System.out.println("Введите позицию pos.");
+        int pos = scanner.nextInt();
+
+        if (!xIsNatural(pos) || pos > n4_5) {
+            System.out.println("Ошибка ввода.");
+            return;
+        }
+
+        int[] y4_5 = l.add(arr, ins, pos);
+        System.out.print("Новый массив:  ");
+        for (int i = 0; i < y4_5.length; i++) {
+            System.out.print(y4_5[i] + " ");
+        }
 
 //        System.out.println("Задача 4.7");
 //        System.out.println("Введите целое число (количество элементов массива).");
@@ -280,34 +280,34 @@ public class Main {
 //            System.out.print(y4_7[i] + " ");
 //        }
 
-        System.out.println("Задача 4.9");
-        System.out.println("Введите целое число (количество элементов массива).");
-        int n4_9 = scanner.nextInt();
-
-        if (!xIsNatural(n4_9)) {
-            System.out.println("Ошибка ввода.");
-            return;
-        }
-
-        if (!MasSize(n4_9)) {
-            System.out.println("Массив пустой.");
-            return;
-        }
-
-        int[] arr = new int[n4_9];
-        for (int i = 0; i < n4_9; i++) {
-            System.out.println("Введите " + (i + 1) + " элемент массива.");
-            arr[i] = scanner.nextInt();
-        }
-
-        System.out.println("Введите число x, индексы которого необходимо найти.");
-        int x4_9 = scanner.nextInt();
-
-        int[] y4_9 = l.findAll(arr, x4_9);
-        System.out.print("Индексы вхождения числа " + x4_9 + " в массив:  ");
-        for (int i = 0; i < y4_9.length; i++) {
-            System.out.print(y4_9[i] + " ");
-        }
+//        System.out.println("Задача 4.9");
+//        System.out.println("Введите целое число (количество элементов массива).");
+//        int n4_9 = scanner.nextInt();
+//
+//        if (!xIsNatural(n4_9)) {
+//            System.out.println("Ошибка ввода.");
+//            return;
+//        }
+//
+//        if (!MasSize(n4_9)) {
+//            System.out.println("Массив пустой.");
+//            return;
+//        }
+//
+//        int[] arr = new int[n4_9];
+//        for (int i = 0; i < n4_9; i++) {
+//            System.out.println("Введите " + (i + 1) + " элемент массива.");
+//            arr[i] = scanner.nextInt();
+//        }
+//
+//        System.out.println("Введите число x, индексы которого необходимо найти.");
+//        int x4_9 = scanner.nextInt();
+//
+//        int[] y4_9 = l.findAll(arr, x4_9);
+//        System.out.print("Индексы вхождения числа " + x4_9 + " в массив:  ");
+//        for (int i = 0; i < y4_9.length; i++) {
+//            System.out.print(y4_9[i] + " ");
+//        }
 
         scanner.close();
     }
